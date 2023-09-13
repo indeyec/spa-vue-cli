@@ -1,21 +1,21 @@
 <template xmlns="http://www.w3.org/1999/html">
     <form @submit.prevent="register">
-      <h2>Register</h2>
+      <h2>Регистрация</h2>
       <br>
       <div>
-        <label htmlFor="lastName">Last name</label>
+        <label htmlFor="lastName">Имя</label>
         <input id="lastName" v-model="fio" type="text" placeholder="last name">
       </div>
       <div>
         <label htmlFor="username">Email</label>
-        <input id="username" v-model="email" type="text" placeholder="i_love_django_@gmail.com">
+        <input id="username" v-model="email" type="text" placeholder="qwe@mail.com">
       </div>
       <div>
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Пароль</label>
         <input id="password" v-model="password" type="password" placeholder="password">
       </div>
-      <input type="submit" value="Register!">
-      <button @click="$router.push('catalog')">Home Page </button>
+      <input type="submit" value="Регистрация">
+      <button @click="$router.push('catalog')">Главная</button>
     </form>
   </template>
   
@@ -67,7 +67,7 @@
   
   form > div > input:focus {
     outline: none;
-    border: 2px solid rgb(43, 36, 248);
+    border: 2px solid rgb(102, 101, 119);
   }
   
   form > input {
@@ -76,7 +76,7 @@
     height: 35px;
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    background: rgba(91, 92, 95, 0.8);
     cursor: pointer;
   }
   form > div > button {
@@ -99,7 +99,7 @@
     height: 35px;
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    background: rgba(204, 205, 211, 0.8);
     cursor: pointer;
   }
   </style>

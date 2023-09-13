@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h2>Elements in the cart: {{ $store.state.cartCount }}</h2>
+      <h2>В корзине : {{ $store.state.cartCount }} элементов</h2>
       <br>
     </div>
     <div v-if="this.$store.state.cart.length > 0">
@@ -12,21 +12,22 @@
             <h2 @click="deleteCard(card)" class="cross">+</h2>
           </div>
         </div>
-        <hr>
+      
       </div>
       <div>
-        <p>{{ fullSum }} &#8381;</p>
-        <button @click="toOrder">Make your order</button>
+       
+        <p>Общая сумма = {{ fullSum }} &#8381;</p>
+        <button @click="toOrder">Оформить заказ</button>
       </div>
     </div>
   
     <div v-else>
       <p>
-        Your cart is kinda empty...
+        Корзина пустая
         <br>
-        Add something in the catalog
+        
       </p>
-      <button @click="$router.push('catalog')">Home Page </button>
+      <button @click="$router.push('catalog')">Главная</button>
     </div>
   </template>
   
@@ -97,7 +98,7 @@
     font-size: 16px;
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    background: rgba(135, 139, 160, 0.8);
     cursor: pointer;
   }
   </style>

@@ -1,5 +1,5 @@
 <template>
-    <p>You signed out!</p>
+    <p>Пока пока !</p>
   </template>
   
   <script>

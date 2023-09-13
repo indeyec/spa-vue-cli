@@ -1,13 +1,13 @@
 <template>
     <div class="header">
-      <h1>My practice shop!</h1>
+      <h1>Spa project</h1>
       <div class="nav">
-        <router-link to="catalog"><p>Catalog</p></router-link>
-        <router-link to="cart"><p>Cart ({{ this.$store.state.cartCount }})</p></router-link>
-        <router-link to="orders"><p>Orders</p></router-link>
-        <router-link v-if="!this.$store.getters.isAuthenticated" to="login"><p>Sign In</p></router-link>
-        <router-link v-if="!this.$store.getters.isAuthenticated" to="register"><p>Sign Up</p></router-link>
-        <router-link v-if="this.$store.getters.isAuthenticated" to="logout" @click="logout"><p>Logout...</p></router-link>
+        <router-link to="catalog"><p>Каталог</p></router-link>
+        <router-link to="cart"><p>Корзина({{ this.$store.state.cartCount }})</p></router-link>
+        <router-link to="orders"><p>Заказы</p></router-link>
+        <router-link v-if="!this.$store.getters.isAuthenticated" to="login"><p>Вход</p></router-link>
+        <router-link v-if="!this.$store.getters.isAuthenticated" to="register"><p>Регистрация</p></router-link>
+        <router-link v-if="this.$store.getters.isAuthenticated" to="logout" @click="logout"><p>Выход</p></router-link>
       </div>
     </div>
   </template>
@@ -26,33 +26,25 @@
   <style scoped>
   .header {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .header > h1 {
    text-align: center;
-    animation: pulsate 0.11s ease-in-out infinite alternate;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #945fff,
-        0 0 82px #5e00ff,
-        0 0 92px #5e00ff,
-        0 0 102px #5e00ff,
-        0 0 151px #5e00ff;
+    
+    
   }
   
   .nav {
-    margin-top: 90px;
-    font-size: 21px;
-    margin-bottom: 20px;
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 23px;
+    margin-bottom: 30px;
+    width: 1000px;;
+    display: block;
+    justify-content: center;
   }
   
   a {
@@ -67,7 +59,7 @@
   </style>
   <style>
   *{
-    background-color: #dec8ff;
+    background-color: lightblue;
     margin: 0;
     padding: 0;
   }

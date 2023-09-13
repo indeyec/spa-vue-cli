@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="login">
-      <h2>Sign in</h2>
-      <p>@ for email is required!*</p>
+      <h2>Вход</h2>
+      
       <br>
       <div>
         <label for="username">Email</label>
@@ -58,7 +58,7 @@
   
   form > div > input:focus {
     outline: none;
-    border: 2px solid rgb(36, 54, 248);
+    border: 2px solid rgb(137, 136, 160);
   }
   
   form > input {
@@ -67,7 +67,7 @@
     height: 35px;
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    background: rgba(118, 126, 163, 0.8);
     cursor: pointer;
   }
   form > div > button {
@@ -81,7 +81,7 @@
   
   form > div > button:focus {
     outline: none;
-    border: 2px solid rgb(43, 36, 248);
+    border: 2px solid rgb(137, 136, 160);
   }
   
   form > button {
@@ -90,7 +90,7 @@
     height: 35px;
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    background: rgba(118, 126, 163, 0.8);
     cursor: pointer;
   }
   </style>

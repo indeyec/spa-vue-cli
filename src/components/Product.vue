@@ -7,7 +7,7 @@
           <p>{{ card.description }}</p>
           <div>
             <span><b>{{ card.price }} &#8381;</b></span>
-            <button v-if="this.$store.getters.isAuthenticated" @click="toCart(card)">In the cart...</button>
+            <button v-if="this.$store.getters.isAuthenticated" @click="toCart(card)">Добавить в корзину</button>
           </div>
         </div>
       </div>
@@ -38,13 +38,13 @@
     width: 40%;
     padding: 10px 20px 40px 20px;
     margin: 30px auto;
-    border: 2px solid #2c3e50;
-    border-radius: 10px;
+    border: 5px solid #000307;
+    border-radius: 15px;
     position: relative;
   }
   
   .cards > div:hover {
-    border: 2px solid rgb(107, 36, 248);
+    border: 2px solid rgb(0, 0, 0);
   }
   
   .cards > div > h3 {
@@ -59,7 +59,7 @@
   }
   
   .cards > div > div {
-    width: 91%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -76,12 +76,12 @@
   
   .cards > div > div > button {
     color: #2c3e50;
-    width: 120px;
+    width: 180px;
     height: 32px;
-    font-size: 16px;
-    border: 2px solid #2c3e50;
-    border-radius: 5px;
-    background: rgba(116, 134, 227, 0.8);
+    font-size: 18px;
+    border: 3px solid #2c3e50;
+    border-radius: 15px;
+    background: rgba(193, 199, 228, 0.8);
     cursor: pointer;
   }
   </style>

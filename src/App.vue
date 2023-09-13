@@ -23,6 +23,7 @@ navigation a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+
 <script>
 import Navigation from "@/components/navigation";
 export default {

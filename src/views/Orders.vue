@@ -1,21 +1,21 @@
 <template>
-    <h1>Orders page!</h1>
+    <h1>Заказы</h1>
     <div v-if="this.$store.state.orders.length > 0">
     <div class="card" v-for="card in $store.state.orders">
       <br>
       <div>
-        <p>Your oder #{{ card.id }}</p>
+        <p>Заказ №{{ card.id }}</p>
         <div>
           <p>{{ card.order_price }} &#8381;</p>
         </div>
       </div>
-      <hr>
+     
     </div>
     </div>
     <div v-else>
-      <p>You have 0 orders!</p>
+      <p>Заказов нету</p>
       <br>
-      <p>Order makes from products in the cart, so you should check it!</p>
+      
       <router-link to="cart"><p>Cart</p></router-link>
     </div>
   </template>
@@ -30,10 +30,7 @@
   </script>
   
   <style scoped>
-  .card {
-    width: 1000px;
-    margin: 0 auto;
-  }
+ 
   
   .card > div {
     display: flex;
